@@ -21,7 +21,7 @@ function update() {
     const head = {x: snake[0].x + direction.x, y: snake[0].y + direction.y};
     
     // Проверка столкновений
-    if (head.x < 0 || head.x >= tileCount || head.y < 0 || head.y >= tileCount || 
+    if (head.x < 0 || head.x > tileCount - 1 || head.y < 0 || head.y > tileCount - 1 || 
         snake.some(segment => segment.x === head.x && segment.y === head.y)) {
         resetGame();
         return;

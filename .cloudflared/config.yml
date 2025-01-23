@@ -1,0 +1,7 @@
+tunnel: a3b24cfc-01e9-430f-939b-3fd5d05ad753
+credentials-file: C:\Users\Zimen\.cloudflared\a3b24cfc-01e9-430f-939b-3fd5d05ad753.json
+
+ingress:
+  - hostname: snake-game.zimen.workers.dev
+    service: http://localhost:3000
+  - service: http_status:404
